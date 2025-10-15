@@ -16,55 +16,56 @@
     
     <properties>
         <!-- Java Version -->
-        <java.version>17</java.version>
+        <jmolecules-cqrs-architecture.version>2.0.0-RC2</jmolecules-cqrs-architecture.version>
+        <java.version>25</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         
         <!-- Spring Boot & Spring -->
-        <spring-boot.version>3.2.0</spring-boot.version>
-        <spring-cloud.version>2023.0.0</spring-cloud.version>
+        <spring-boot.version>3.5.6</spring-boot.version>
+        <spring-cloud.version>2025.1.0-M3</spring-cloud.version>
         
         <!-- DDD Support Libraries -->
-        <archunit.version>1.2.1</archunit.version>
-        <jmolecules.version>1.9.0</jmolecules.version>
-        <moduliths.version>1.1.0</moduliths.version>
+        <archunit.version>1.4.1</archunit.version>
+        <jmolecules.version>2.0.0-RC2</jmolecules.version>
+        <moduliths.version>1.3.0</moduliths.version>
         
         <!-- Domain Event & Messaging -->
-        <spring-kafka.version>3.1.0</spring-kafka.version>
-        <rabbitmq.version>3.1.0</rabbitmq.version>
+        <spring-kafka.version>4.0.0-M5</spring-kafka.version>
+        <rabbitmq.version>5.26.0</rabbitmq.version>
         
         <!-- Persistence -->
-        <hibernate.version>6.4.1.Final</hibernate.version>
-        <querydsl.version>5.0.0</querydsl.version>
-        <liquibase.version>4.25.0</liquibase.version>
+        <hibernate.version>7.2.0.CR1</hibernate.version>
+        <querydsl.version>5.1.0</querydsl.version>
+        <liquibase.version>5.0.1</liquibase.version>
         
         <!-- Validation & Mapping -->
-        <jakarta-validation.version>3.0.2</jakarta-validation.version>
-        <mapstruct.version>1.5.5.Final</mapstruct.version>
-        <lombok.version>1.18.30</lombok.version>
+        <jakarta-validation.version>3.1.1</jakarta-validation.version>
+        <mapstruct.version>1.6.3</mapstruct.version>
+        <lombok.version>1.18.42</lombok.version>
         
         <!-- Testing -->
-        <junit.version>5.10.1</junit.version>
-        <mockito.version>5.8.0</mockito.version>
-        <assertj.version>3.24.2</assertj.version>
-        <testcontainers.version>1.19.3</testcontainers.version>
-        <rest-assured.version>5.4.0</rest-assured.version>
+        <junit.version>6.0.0</junit.version>
+        <mockito.version>5.20.0</mockito.version>
+        <assertj.version>4.0.0-M1</assertj.version>
+        <testcontainers.version>1.21.3</testcontainers.version>
+        <rest-assured.version>5.5.6</rest-assured.version>
         
         <!-- Documentation -->
         <springdoc.version>2.3.0</springdoc.version>
         
         <!-- Utilities -->
-        <apache-commons-lang3.version>3.14.0</apache-commons-lang3.version>
-        <guava.version>33.0.0-jre</guava.version>
-        <vavr.version>0.10.4</vavr.version>
+        <apache-commons-lang3.version>3.19.0</apache-commons-lang3.version>
+        <guava.version>33.5.0-jre</guava.version>
+        <vavr.version>1.0.0-alpha-4</vavr.version>
         
         <!-- Plugin Versions -->
-        <maven-compiler-plugin.version>3.12.1</maven-compiler-plugin.version>
-        <maven-surefire-plugin.version>3.2.3</maven-surefire-plugin.version>
-        <maven-failsafe-plugin.version>3.2.3</maven-failsafe-plugin.version>
-        <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
+        <maven-compiler-plugin.version>3.14.1</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>3.5.4</maven-surefire-plugin.version>
+        <maven-failsafe-plugin.version>3.5.4</maven-failsafe-plugin.version>
+        <jacoco-maven-plugin.version>0.8.14</jacoco-maven-plugin.version>
     </properties>
     
     <!-- Typical DDD Module Structure -->
@@ -73,7 +74,8 @@
         <module>application</module>
         <module>infrastructure</module>
         <module>presentation</module>
-        <module>shared-kernel</module>
+        <module>web-client</module>
+        <module>common</module>
     </modules>
     
     <dependencyManagement>
@@ -129,6 +131,12 @@
                 <artifactId>archunit-junit5</artifactId>
                 <version>${archunit.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.jmolecules/jmolecules-cqrs-architecture -->
+            <dependency>
+                <groupId>org.jmolecules</groupId>
+                <artifactId>jmolecules-cqrs-architecture</artifactId>
+                <version>${jmolecules-cqrs-architecture.version}</version>
             </dependency>
             
             <!-- Domain Events & Messaging -->

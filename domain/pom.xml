@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <properties>
+        <jmolecules-layered-architecture.version>2.0.0-RC2</jmolecules-layered-architecture.version>
+    </properties>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.example.ddd</groupId>
+        <artifactId>ddd-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.example.ddd</groupId>
+    <artifactId>domain</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <name>Domain Layer</name>
+    <description>Domain layer containing business logic, entities, value objects, and domain services</description>
+
+    <dependencies>
+        <!-- JMolecules DDD Support -->
+        <dependency>
+            <groupId>org.jmolecules</groupId>
+            <artifactId>jmolecules-ddd</artifactId>
+        </dependency>
+
+        <!-- Validation -->
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jmolecules/jmolecules-layered-architecture -->
+        <dependency>
+            <groupId>org.jmolecules</groupId>
+            <artifactId>jmolecules-layered-architecture</artifactId>
+            <version>${jmolecules-layered-architecture.version}</version>
+        </dependency>
+
+        <!-- Apache Commons -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jmolecules</groupId>
+            <artifactId>jmolecules-cqrs-architecture</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jmolecules</groupId>
+            <artifactId>jmolecules-events</artifactId>
+        </dependency>
+    </dependencies>
+
+
+</project>

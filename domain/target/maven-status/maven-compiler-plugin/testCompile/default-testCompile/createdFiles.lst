@@ -1,0 +1,9 @@
+com\example\ddd\domain\model\ProductTest$ProductInformation.class
+com\example\ddd\domain\model\ProductTest$DomainEvents.class
+com\example\ddd\domain\model\ProductTest$PriceManagement.class
+com\example\ddd\domain\model\ProductTest$ProductStatusManagement.class
+com\example\ddd\domain\model\ProductTest$ProductCreation.class
+com\example\ddd\domain\model\ProductTest$Reconstitution.class
+com\example\ddd\domain\model\ProductTest$StockManagement.class
+com\example\ddd\domain\model\ProductTest.class
+com\example\ddd\domain\model\ProductTest$JMoleculesIntegration.class

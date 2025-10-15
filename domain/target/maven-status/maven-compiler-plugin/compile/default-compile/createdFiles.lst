@@ -1,0 +1,12 @@
+com\example\ddd\domain\service\ProductDomainService.class
+com\example\ddd\domain\model\ProductId.class
+com\example\ddd\domain\model\Product.class
+com\example\ddd\domain\repository\ProductRepository.class
+com\example\ddd\domain\exception\InvalidDomainStateException.class
+com\example\ddd\domain\model\ProductStatus.class
+com\example\ddd\domain\event\ProductCreatedEvent.class
+com\example\ddd\domain\event\ProductPriceChangedEvent.class
+com\example\ddd\domain\exception\EntityNotFoundException.class
+com\example\ddd\domain\model\Money.class
+com\example\ddd\domain\package-info.class
+com\example\ddd\domain\exception\DomainException.class

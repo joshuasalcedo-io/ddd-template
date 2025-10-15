@@ -1,0 +1,6 @@
+com\example\ddd\presentation\config\OpenApiConfiguration.class
+com\example\ddd\presentation\exception\GlobalExceptionHandler.class
+com\example\ddd\presentation\exception\ValidationErrorResponse.class
+com\example\ddd\presentation\controller\ProductController.class
+com\example\ddd\presentation\DddApplication.class
+com\example\ddd\presentation\dto\ErrorResponse.class

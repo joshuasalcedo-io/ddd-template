@@ -1,0 +1,9 @@
+E:\ddd-template\application\src\main\java\com\example\ddd\application\dto\CreateProductRequest.java
+E:\ddd-template\application\src\main\java\com\example\ddd\application\dto\ProductResponse.java
+E:\ddd-template\application\src\main\java\com\example\ddd\application\dto\UpdateProductRequest.java
+E:\ddd-template\application\src\main\java\com\example\ddd\application\mapper\ProductMapper.java
+E:\ddd-template\application\src\main\java\com\example\ddd\application\port\EventPublisher.java
+E:\ddd-template\application\src\main\java\com\example\ddd\application\usecase\CreateProductUseCase.java
+E:\ddd-template\application\src\main\java\com\example\ddd\application\usecase\GetProductUseCase.java
+E:\ddd-template\application\src\main\java\com\example\ddd\application\usecase\ListProductsUseCase.java
+E:\ddd-template\application\src\main\java\com\example\ddd\application\usecase\UpdateProductUseCase.java

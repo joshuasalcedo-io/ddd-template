@@ -1,0 +1,6 @@
+E:\ddd-template\infrastructure\src\main\java\com\example\ddd\infrastructure\config\UseCaseConfiguration.java
+E:\ddd-template\infrastructure\src\main\java\com\example\ddd\infrastructure\messaging\ProductEventHandler.java
+E:\ddd-template\infrastructure\src\main\java\com\example\ddd\infrastructure\messaging\SpringEventPublisher.java
+E:\ddd-template\infrastructure\src\main\java\com\example\ddd\infrastructure\persistence\JpaProductRepository.java
+E:\ddd-template\infrastructure\src\main\java\com\example\ddd\infrastructure\persistence\ProductEntity.java
+E:\ddd-template\infrastructure\src\main\java\com\example\ddd\infrastructure\persistence\ProductRepositoryImpl.java
